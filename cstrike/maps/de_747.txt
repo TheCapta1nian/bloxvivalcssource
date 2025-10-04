@@ -1,0 +1,29 @@
+TWHL.INFO
+///////////////////////////////////////////////////
+de_747 -TWHL- C32 -Remake A Counter-Strike Classic//
+//////////////////////////////////////////////////
+By Captain Terror
+
+
+
+///////////
+Objective ///
+//////////
+CTs must try to stop the Terrorists from Bombing TWHL 747 and the nearby fuel farm!
+
+////////
+Credits//
+///////
+Everything Valve except a few textures. Please contact me with any bugs or questions at: 
+
+captain0terror@gmail.com
+
+
+//////////
+Thank-you///
+//////////
+TWHL.INFO - The Whole Half-Life - Turorials and Mapping Resources.
+Cfoust for Propper and great forum support.
+Atom for HLLaunchpad and help testing.
+Archie for answering all my dumb questions. 
+=)
