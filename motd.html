@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BLOXVIVAL | The CS Source Experience</title>
+<style type="text/css">
+/* ===== Body & Background ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Verdana", sans-serif;
+    background: radial-gradient(circle at center, #0a0a0a, #1c1c1c);
+    color: #FFFFFF;
+    overflow: hidden;
+}
+
+/* ===== Glowing Container ===== */
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #111;
+    border: 3px solid #FF6F00;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #FF6F00, 0 0 50px #FF6F00 inset;
+    text-align: center;
+    animation: glow 3s infinite alternate;
+}
+
+/* ===== Glow Animation ===== */
+@keyframes glow {
+    0% { box-shadow: 0 0 20px #FF6F00, 0 0 50px #FF6F00 inset; }
+    50% { box-shadow: 0 0 35px #FFA000, 0 0 70px #FFA000 inset; }
+    100% { box-shadow: 0 0 20px #FF6F00, 0 0 50px #FF6F00 inset; }
+}
+
+/* ===== Titles ===== */
+h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #FF6F00;
+    text-shadow: 2px 2px 5px #000;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 3px #000;
+}
+
+/* ===== Buttons ===== */
+a.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 35px;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #FF6F00, #FFA000);
+    box-shadow: 0 0 15px #FF6F00;
+    transition: all 0.3s ease;
+}
+
+a.button:hover {
+    background: linear-gradient(45deg, #FFA000, #FFD580);
+    color: #000;
+    box-shadow: 0 0 25px #FFD580, 0 0 50px #FF6F00 inset;
+}
+
+/* ===== Paragraphs ===== */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #DDD;
+}
+
+/* ===== Footer ===== */
+.footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    text-shadow: 0 0 3px #000;
+}
+
+/* ===== Floating Particles ===== */
+@keyframes float {
+    0% { transform: translateY(0px); opacity: 0.6; }
+    50% { transform: translateY(-20px); opacity: 1; }
+    100% { transform: translateY(0px); opacity: 0.6; }
+}
+
+.particle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #FF6F00;
+    border-radius: 50%;
+    animation: float 4s infinite;
+    opacity: 0.7;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>BLOXVIVAL</h1>
+    <h2>The CS Source Experience</h2>
+    <p>Welcome to the ultimate CS:S server! Enjoy custom maps, epic plugins, and a friendly competitive community.  
+    Connect, play, and dominate the battlefield!</p>
+    <p>
+        <a class="button" href="https://www.counter-strike.net" target="_blank">Official CS Site</a>
+        <a class="button" href="https://discord.gg/k5pFEzt675" target="_blank">Join our Discord</a>
+    </p>
+</div>
+
+<div class="footer">
+    &copy; 2025 BLOXVIVAL | All Rights Reserved
+</div>
+
+<!-- Floating Particles -->
+<script>
+for (let i = 0; i < 50; i++) {
+    let particle = document.createElement('div');
+    particle.className = 'particle';
+    particle.style.left = Math.random() * window.innerWidth + 'px';
+    particle.style.top = Math.random() * window.innerHeight + 'px';
+    particle.style.animationDelay = Math.random() * 5 + 's';
+    document.body.appendChild(particle);
+}
+</script>
+</body>
+</html>
