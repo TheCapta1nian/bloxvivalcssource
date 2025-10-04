@@ -1,135 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>BLOXVIVAL | The CS Source Experience</title>
-<style type="text/css">
-/* ===== Body & Background ===== */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Verdana", sans-serif;
-    background: radial-gradient(circle at center, #0a0a0a, #1c1c1c);
-    color: #FFFFFF;
-    overflow: hidden;
-}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BLOXVIVAL MOTD</title>
+<style>
+    /* Global Styles */
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(135deg, #1e90ff, #ff0000);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
+        overflow: hidden;
+    }
 
-/* ===== Glowing Container ===== */
-.container {
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 40px;
-    background: #111;
-    border: 3px solid #FF6F00;
-    border-radius: 20px;
-    box-shadow: 0 0 20px #FF6F00, 0 0 50px #FF6F00 inset;
-    text-align: center;
-    animation: glow 3s infinite alternate;
-}
+    /* Header */
+    .header {
+        width: 100%;
+        text-align: center;
+        padding: 30px 10px;
+        background: rgba(0,0,0,0.6);
+        box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
 
-/* ===== Glow Animation ===== */
-@keyframes glow {
-    0% { box-shadow: 0 0 20px #FF6F00, 0 0 50px #FF6F00 inset; }
-    50% { box-shadow: 0 0 35px #FFA000, 0 0 70px #FFA000 inset; }
-    100% { box-shadow: 0 0 20px #FF6F00, 0 0 50px #FF6F00 inset; }
-}
+    .header h1 {
+        font-size: 2.5em;
+        margin: 0;
+        background: linear-gradient(to right, #00f, #f00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
-/* ===== Titles ===== */
-h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-    color: #FF6F00;
-    text-shadow: 2px 2px 5px #000;
-}
+    .header p {
+        font-size: 1.2em;
+        margin: 5px 0 0 0;
+        color: #fff;
+    }
 
-h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #FFFFFF;
-    text-shadow: 1px 1px 3px #000;
-}
+    /* Rules Box */
+    .rules {
+        background: rgba(0,0,0,0.7);
+        margin: 20px;
+        padding: 20px 30px;
+        border-radius: 15px;
+        max-width: 700px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
 
-/* ===== Buttons ===== */
-a.button {
-    display: inline-block;
-    margin: 10px;
-    padding: 15px 35px;
-    color: #FFF;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 12px;
-    background: linear-gradient(45deg, #FF6F00, #FFA000);
-    box-shadow: 0 0 15px #FF6F00;
-    transition: all 0.3s ease;
-}
+    .rules h2 {
+        margin-top: 0;
+        color: #ffcc00;
+        text-align: center;
+        font-size: 2em;
+    }
 
-a.button:hover {
-    background: linear-gradient(45deg, #FFA000, #FFD580);
-    color: #000;
-    box-shadow: 0 0 25px #FFD580, 0 0 50px #FF6F00 inset;
-}
+    .rules ul {
+        list-style: none;
+        padding-left: 0;
+    }
 
-/* ===== Paragraphs ===== */
-p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #DDD;
-}
+    .rules li {
+        margin: 10px 0;
+        font-size: 1.1em;
+        position: relative;
+        padding-left: 25px;
+    }
 
-/* ===== Footer ===== */
-.footer {
-    position: fixed;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-    font-size: 12px;
-    color: #888;
-    text-shadow: 0 0 3px #000;
-}
+    .rules li::before {
+        content: "✔";
+        position: absolute;
+        left: 0;
+        color: #00ffcc;
+    }
 
-/* ===== Floating Particles ===== */
-@keyframes float {
-    0% { transform: translateY(0px); opacity: 0.6; }
-    50% { transform: translateY(-20px); opacity: 1; }
-    100% { transform: translateY(0px); opacity: 0.6; }
-}
+    /* Footer */
+    .footer {
+        margin-top: auto;
+        padding: 15px 10px;
+        width: 100%;
+        text-align: center;
+        background: rgba(0,0,0,0.5);
+        font-size: 0.9em;
+        color: #ddd;
+    }
 
-.particle {
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    background: #FF6F00;
-    border-radius: 50%;
-    animation: float 4s infinite;
-    opacity: 0.7;
-}
+    /* Cool Effects */
+    .rules li:hover {
+        color: #ffcc00;
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+
+    .header h1:hover {
+        filter: drop-shadow(0 0 10px #fff);
+        transition: 0.3s;
+    }
 </style>
 </head>
 <body>
-<div class="container">
+
+<div class="header">
     <h1>BLOXVIVAL</h1>
-    <h2>The CS Source Experience</h2>
-    <p>Welcome to the ultimate CS:S server! Enjoy custom maps, epic plugins, and a friendly competitive community.  
-    Connect, play, and dominate the battlefield!</p>
-    <p>
-        <a class="button" href="https://www.counter-strike.net" target="_blank">Official CS Site</a>
-        <a class="button" href="https://discord.gg/k5pFEzt675" target="_blank">Join our Discord</a>
-    </p>
+    <p>The CS:Source Experience</p>
+</div>
+
+<div class="rules">
+    <h2>Server Rules</h2>
+    <ul>
+        <li>Be respectful to all players.</li>
+        <li>No cheating, hacks, or exploits.</li>
+        <li>No spamming or excessive mic noise.</li>
+        <li>English only in global chat.</li>
+        <li>Follow admin instructions at all times.</li>
+        <li>Have fun and enjoy the game!</li>
+    </ul>
 </div>
 
 <div class="footer">
-    &copy; 2025 BLOXVIVAL | All Rights Reserved
+    <p>Visit our Discord for updates: discord.gg/yourserver | &copy; 2025 BLOXVIVAL</p>
 </div>
 
-<!-- Floating Particles -->
-<script>
-for (let i = 0; i < 50; i++) {
-    let particle = document.createElement('div');
-    particle.className = 'particle';
-    particle.style.left = Math.random() * window.innerWidth + 'px';
-    particle.style.top = Math.random() * window.innerHeight + 'px';
-    particle.style.animationDelay = Math.random() * 5 + 's';
-    document.body.appendChild(particle);
-}
-</script>
 </body>
 </html>
